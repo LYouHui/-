@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.schoolpet.CreateUserDialog">
+
+    <RelativeLayout
+        android:layout_width="268dp"
+        android:layout_height="498dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间："
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/createUserDialog_editText_time"
+            android:layout_alignBottom="@+id/createUserDialog_editText_time"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地点："
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/createUserDialog_editText_time"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/createUserDialog_editText_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createUserDialog_radioGroup"
+            android:layout_toEndOf="@+id/textView9"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/createUserDialog_editText_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignBaseline="@+id/textView19"
+            android:layout_alignBottom="@+id/textView19"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/createUserDialog_button_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:text="确定"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="204dp"
+            android:layout_below="@+id/createUserDialog_editText_place"
+            android:layout_centerHorizontal="true" />
+
+        <RadioGroup
+            android:id="@+id/createUserDialog_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RadioButton
+                android:id="@+id/createUserDialog_radioButton_eating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:text="约饭" />
+
+            <RadioButton
+                android:id="@+id/createUserDialog_radioButton_study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/createUserDialog_radioButton_eating"
+                android:layout_weight="1"
+                android:text="约自习" />
+
+            <RadioButton
+                android:id="@+id/createUserDialog_radioButton_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/createUserDialog_radioButton_study"
+                android:layout_weight="1"
+                android:text="约运动" />
+
+            <RadioButton
+                android:id="@+id/createUserDialog_radioButton_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/createUserDialog_radioButton_sport"
+                android:layout_weight="1"
+                android:text="约游戏" />
+
+            <RadioButton
+                android:id="@+id/createUserDialog_radioButton_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/createUserDialog_radioGroup"
+                android:layout_weight="1"
+                android:text="约外出" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

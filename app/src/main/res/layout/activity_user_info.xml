@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.schoolpet.UserInfo">
+
+    <ImageView
+        android:id="@+id/userInfo_imageView_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/head"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="72dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="176dp"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/userInfo_imageView_head"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/userInfo_textView_showUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_above="@+id/userInfo_textView_trueName"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="真实姓名："
+        android:textSize="20dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/userInfo_textView_trueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/userInfo_textView_showUserName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宠物名:"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/userInfo_textView_petName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/userInfo_textView_trueName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宿舍："
+        android:textSize="20sp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/userInfo_textView_dormitory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/userInfo_textView_petName"
+        android:layout_alignStart="@+id/userInfo_textView_hometown" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所在院系："
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/userInfo_textView_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/userInfo_textView_hometown"
+        android:layout_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家乡："
+        android:textSize="20sp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/userInfo_textView_hometown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignStart="@+id/userInfo_textView_department"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/userInfo_button_exitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:text="退出登录"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp" />
+
+</RelativeLayout>

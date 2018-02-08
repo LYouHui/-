@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="173dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/book" />
+
+        <TextView
+            android:id="@+id/oldBookItem_textView_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="计算机组成原理"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/oldBookItem_textView_department"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="18dp"
+            android:text="联系方式："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/oldBookItem_textView_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView20"
+            android:layout_centerVertical="true"
+            android:text="计算机科学与技术"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/oldBookItem_textView_department"
+            android:layout_below="@+id/oldBookItem_textView_book"
+            android:layout_marginTop="10dp"
+            android:text="适用："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/oldBookItem_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView20"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView20"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

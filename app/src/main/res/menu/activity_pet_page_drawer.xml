@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_PetPage"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="宠物界面" />
+        <item
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="好友列表"
+            android:id="@+id/menu_FriendList" />
+        <item
+            android:id="@+id/menu_OldBookMarKet"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="旧书市场" />
+        <item
+            android:id="@+id/menu_neihbor"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="到位" />
+    </group>
+
+    <item>
+        <menu>
+            <item
+                android:id="@+id/menu_AddFriend"
+                android:icon="@drawable/ic_menu_share"
+                android:title="添加好友" />
+            <item
+                android:id="@+id/menu_LoginOrNot"
+                android:icon="@drawable/ic_menu_send"
+                android:title="用户信息" />
+        </menu>
+    </item>
+
+</menu>
